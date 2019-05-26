@@ -7,6 +7,8 @@ import store from './store'
 import 'vuetify/dist/vuetify.min.css'
 import axios from 'axios'
 import VueResource from 'vue-resource';
+import VueMoment from 'vue-moment'
+import moment from 'moment-timezone'
 
 
 Vue.use(VueResource)
@@ -17,6 +19,7 @@ Vue.use(Vuetify)
 new Vue({
   router,
   store,
+  moment,
   axios,
   VueResource,
   render: h => h(App)
